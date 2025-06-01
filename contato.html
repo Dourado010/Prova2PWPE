@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="nav.contact">Contato - MSF</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header></header>
+    <nav class="navbar">
+        <div class="logo">MSF</div>
+        <div class="nav-links">
+            <a href="index.html" data-i18n="nav.home">Início</a>
+            <a href="projetos.html" data-i18n="nav.projects">Projetos</a>
+            <a href="contato.html" data-i18n="nav.contact">Contato</a>
+        </div>
+    </nav>
+
+    <section class="section">
+        <h2 data-i18n="contact.title">Entre em Contato e Doe se puder</h2>
+        <p data-i18n="contact.info">Email: contato@msf.org | Telefone: (11) 99999-9999 | Pix: 000.000.000.00</p><br>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Seu nome" data-i18n="form.name">
+            <input type="email" id="email" placeholder="Seu email" data-i18n="form.email">
+            <button type="submit" data-i18n="form.submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Accordion traduzido -->
+    <section class="section">
+        <h2 data-i18n="faq.title">Perguntas Frequentes</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-button" data-i18n="faq.q1">Como posso doar?</button>
+                <div class="accordion-content" data-i18n="faq.a1">Você pode doar via Pix, cartão de crédito ou transferência bancária através do nosso site oficial.</div>
+            </div>
+            <div class="accordion-item">
+                <button class="accordion-button" data-i18n="faq.q2">Onde a MSF atua?</button>
+                <div class="accordion-content" data-i18n="faq.a2">Atuamos em mais de 70 países, especialmente em regiões afetadas por conflitos e crises humanitárias.</div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p data-i18n="footer.text">&copy; 2025 MSF - Médicos Sem Fronteiras. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

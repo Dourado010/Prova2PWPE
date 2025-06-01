@@ -1,0 +1,213 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilizando a Barra de Navegação */
+.navbar {
+    background-color: #d71a28;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ajustando a imagem */
+.home img {
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+/* Estilizando as seções */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.section h1 {
+    color: #d71a28;
+    text-align: center;
+}
+
+.section p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #d71a28;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #b01720;
+}
+
+.destaque {
+    font-weight: bold;
+}
+
+/* Ajuste no Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Empilhar os links verticalmente */
+        align-items: center;
+    }
+}
+
+/* Animação de entrada */
+.fade-in {
+    animation: fadeIn ease-in 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos do formulário */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+#contact-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    background-color: #d71a28;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #b01720;
+}
+
+/* Estilo do Accordion */
+.accordion {
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #d71a28;
+    color: white;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.accordion-button:hover {
+    background-color: #b01720;
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+
+.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.carousel {
+    max-width: 700px;
+    margin: 40px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
